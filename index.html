@@ -202,8 +202,8 @@
       retina_detect: true
     });
 
-    if (loe.getItem("introShown")) {
-      window.location.href = "indexG/principio.html";
+    if (localStorage.getItem("introShown")) {
+      window.location.href = "principio.html";
     }
 
     function goToMain() {
@@ -212,7 +212,7 @@
       localStorage.setItem("introShown", "true");
       document.querySelector('.container').style.opacity = 0;
       setTimeout(() => {
-        window.location.href = "indexG/principio.html";
+        window.location.href = "principio.html";
       }, 1000);
     }
   </script>
